@@ -21,9 +21,9 @@
       <h5 class="text-muted">Search for the latest news articles from today!
       </h5>
       <form>
-        <label for="search"></label>
-        <input id="search" placeholder="Topic" type="text">
-        <button class="btn btn-primary">Search</button>
+        <!-- <label for="search-bar"></label> -->
+        <input type="text" id="search-bar" placeholder="Topic" value="">
+        <button class="btn btn-primary" id="search-button">Search</button>
       </form>
     </div>
   </div>
@@ -31,21 +31,21 @@
 
   <!-- for grid and cards -->
   <div class="container-fluid">
-    <div class="card-deck flex-column">
+    <div class="card-deck flex-column" id="news-container">
 
-      <div class="card d-flex flex-column align-items-center text-center mb-3">
-        <img src="..." class="card-img-top"
-          style="width: 400px;" alt="...">
+      <!-- <div class="card d-flex flex-column align-items-center text-center mb-3">
+        <iframe src="" width="80%" height="300px"></iframe>
         <div class="card-body">
           <h5 class="card-title">Card title</h5>
           <p class="card-text">This is a longer card with supporting text below
             as a natural lead-in to additional content. This content is a little
             bit longer.</p>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 
+  
 
 
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
