@@ -19,11 +19,11 @@ searchButton.addEventListener('click', (e) => {
 function renderArticles(newsArr) {
   newsArr.map((newsArrValue) => {
     const newsDiv = document.createElement('div');
-    newsDiv.setAttribute('class', 'card d-flex flex-column align-items-center mb-3 mx-auto');
-    newsDiv.setAttribute('style', 'max-width: 960px;')
+    newsDiv.setAttribute('class', 'card d-flex flex-column align-items-center mb-3 mx-auto border-primary');
+    newsDiv.setAttribute('style', 'max-width: 600px;')
     newsDiv.innerHTML = `
       <div class="card-body">
-        <h5 class="card-title text-center">${newsArrValue.title}</h5>
+        <h5 class="card-title">${newsArrValue.title}</h5>
         <p class="card-text">${newsArrValue.description}</p>
         <a href="${newsArrValue.url}" class=" btn btn-primary card-text" target="_blank">Vist Website</a>
         </div>
